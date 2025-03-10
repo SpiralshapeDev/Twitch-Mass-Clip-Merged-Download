@@ -11,24 +11,6 @@ import glob
 from datetime import date
 from moviepy import VideoFileClip, concatenate_videoclips
 
-def get_clip_name(clip_name, author_name):
-    text_array = clip_name.split("_")
-    i = -1
-    clip_name_index = 0
-    for x in text_array:
-        i += 1
-        if x == author_name:
-            clip_name_index = i
-    final_array = []
-    ii = clip_name_index
-    for x in range(i - clip_name_index):
-        ii += 1
-        final_array.append(text_array[ii] + ("" if ii == len(text_array) - 1 else "_"))
-    final_text = ""
-    for x in final_array:
-        final_text += x
-    return final_text
-
 text_default_color = "\033[0m"
 warning_text_color = "\033[93m"
 
