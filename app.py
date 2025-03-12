@@ -1,8 +1,6 @@
-moduleRequirements = '''
-pip install twitch-dl
-pip install moviepy
-pip install moviepy ffmpeg
-''' # These are required for the script to function
+## Required for the script to function
+# pip install twitch-dl==2.11.0
+# pip install moviepy==2.1.2
 
 import os
 import subprocess
