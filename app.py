@@ -16,7 +16,7 @@ warning_text_color = "\033[93m"
 # Get Path
 clip_output_path = str(os.path.abspath(__file__)).replace("app.py","clips/")
 if os.path.exists(clip_output_path):
-    input(f"{warning_text_color}[Warning] Detected in files in /clips folder, any files in this directory will be deleted after you press Enter")
+    input(f"{warning_text_color}[Warning] Detected files in /clips folder, any files in this directory will be deleted after you press Enter")
     shutil.rmtree(clip_output_path)
 
 channelName = str(input(f"{text_default_color}Channel Name \n")).lower()
